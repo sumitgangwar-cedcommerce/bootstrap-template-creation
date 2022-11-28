@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/static/Montserrat-Regular.ttf');
+}
+
 .bg--ebony-clay {
     background-color: #252b42;
 }
@@ -10,13 +15,30 @@ background-color: #23a6f0;
     background-color: #8EC2F2;
 }
 
+.bg--white {
+    background-color: #ffffff;
+}
+
+.bg--burnt-sienna {
+    background-color: #E77C40;
+}
+
 .text--piction-blue {
 color: #23a6f0;
 }
 
 body {
     margin:0;
+    font-family: Montserrat;
 }
+
+ul {
+    list-style-type: none;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* header */
 
 .container__bg-img {
     background-image: linear-gradient(
@@ -31,14 +53,21 @@ body {
     min-height: 100vh;
 }
 
-.banner-content {
-    padding: 80px 0;
-    max-width: 599px;
-    
+@media screen and (max-width:768px){
+    .container__bg-img {
+        min-height: 0;
+    }
 }
 
-.banner-content > div {
-    
+.container__bg-img > div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.banner-content {
+    gap:35px;
+    padding: 112px 0 5px 0 ;
 }
 
 .banner-content h2 {
@@ -67,4 +96,312 @@ body {
 
 .banner-content__button-group {
     gap:10px;
+    align-items: center;
 }
+
+/* feature--1 */
+
+.features-1 {
+    padding-top:96px;
+    padding-bottom: 96px; 
+}
+
+@media screen and (max-width:768px){
+    .features-1 {
+        padding:80px 0; 
+    }
+}
+
+.features-1 > ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.features-1 > ul > li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding: 40px 50px;
+    gap: 30px;
+    text-align: center;
+}
+
+.features-1 > ul > li h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.features-1 > ul > li p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+/* testimonial */
+
+.testimonial {
+    padding: 112px 0px;
+    gap: 80px;
+}
+
+.testimonial-title {
+    max-width: 607px;
+    text-align: center;
+}
+
+.testimonial-title h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+}
+
+.testimonial-title p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.testimonial__list {
+    width: 100%;
+    gap: 30px;
+}
+
+.testimonial__list li{
+    max-width: 450px;
+    padding: 30px 40px;
+    gap:15px;
+}
+
+.testimonial__list-title h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color:black;
+    margin: 0 !important;
+}
+
+.testimonial__list-title h6 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color:#737373; 
+    margin: 0 !important;
+}
+
+.testimonial__list li p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+
+.testimonial__list-avatar {
+    border-radius: 50%;
+    top:23px;
+    left:-43px;
+}
+
+/* industry */
+
+.industry{
+    padding: 112px 0;
+    gap:96px;
+}
+
+
+.industry-content {
+    z-index: 100;
+    bottom:0;
+    padding: 10px 20px;
+    max-width: calc(331px - 40px);
+}
+
+.industry-content h6 {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.industry-content h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+
+.industry-content button {
+    border-radius: 37px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding: 10px 36px;
+    width: max-content;
+}
+
+@media screen and (max-width:768px){
+    .industry__item-list {
+        gap: 30px;
+    }
+}
+
+/* pricing */
+
+.pricing {
+    padding: 112px 0;
+    gap:80px
+}
+
+.pricing__list {
+    gap:30px;
+}
+
+.pricing__list-item {
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    padding: 50px 40px;
+    gap:35px;
+}
+
+.pricing__list-item h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.pricing__list-item h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+}
+
+.pricing__list-item__price h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    margin: 0 !important;
+}
+
+.pricing__list-item__price h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin: 0 !important;
+}
+
+.pricing__list-item__content {
+    gap:15px;
+}
+
+.pricing__list-item__content li {
+    gap:10px;
+}
+
+.pricing__list-item__content li h6 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.pricing__list-item__badge {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    top:-25px;
+    right: 45px;
+}
+
+/* contact-form */
+
+.contact-form {
+    gap: 40px;
+    padding: 90px 0;
+}
+
+.contact-form form {
+    
+}
+
+.contact-form form input , .contact-form form select , .contact-form form textarea {
+    max-width: calc(50%-20px);
+    background-color: #DDDDDD;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    padding: 11px 21px;
+}
+
+/* .contact-form form input , .contact-form form select {
+    width: calc(50% - 10px);
+}
+
+@media screen and (max-width:768px) {
+    .contact-form form input , .contact-form form select {
+        width: 100%;
+    }
+} */
+
+/* .contact-form form textarea {
+    width: 90%;
+} */
+
+.contact-form__title > h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin: 0;
+}
+
+.contact-form__title > h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    margin: 0;
+}
+
+.contact-form > button {
+    width: max-content;
+    padding: 15px 40px;
+}
+
+.contact-form__bg {
+    background-size: cover;
+    background-image: url('../images/contact-cover.1.jpg');
+}
+
+@media (max-width:768px) {
+    .contact-form > button {
+        width: 100%;
+        padding: 15px 40px;
+    }
+}
+
+/* consulting */
+
+.consulting {
+    padding:40px 0;
+}
+
+.consulting button {
+    padding: 15px 40px;
+}
+
+/* footer */
+
+.footer-sec {
+    padding: 50px 0;
+}
+
+
