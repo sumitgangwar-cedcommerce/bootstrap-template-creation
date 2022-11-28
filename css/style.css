@@ -1,0 +1,70 @@
+.bg--ebony-clay {
+    background-color: #252b42;
+}
+
+.bg--picton-blue {
+background-color: #23a6f0;
+}
+
+.bg--jordy-blue {
+    background-color: #8EC2F2;
+}
+
+.text--piction-blue {
+color: #23a6f0;
+}
+
+body {
+    margin:0;
+}
+
+.container__bg-img {
+    background-image: linear-gradient(
+      89.85deg,
+      #000000 0.13%,
+      #000000 0.14%,
+      rgba(0, 0, 0, 0)
+    ),
+    url("../images/hero.png");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.banner-content {
+    padding: 80px 0;
+    max-width: 599px;
+    
+}
+
+.banner-content > div {
+    
+}
+
+.banner-content h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+}
+
+.banner-content h4 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+
+.banner-content button {
+    border-radius: 37px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding: 15px 36px;
+    width: max-content;
+}
+
+.banner-content__button-group {
+    gap:10px;
+}
