@@ -435,8 +435,7 @@ header {
     margin: 0;
 }
 
-.contact-form > button {
-    width: max-content;
+.contact-form  button {
     padding: 15px 40px;
 }
 
@@ -446,7 +445,7 @@ header {
 }
 
 @media (max-width:768px) {
-    .contact-form > button {
+    .contact-form  button {
         width: 100%;
         padding: 15px 40px;
     }
