@@ -489,24 +489,38 @@
     </section>
     <section class="contact-form__bg">
         <div class="container contact-form d-flex flex-column">
-            <div class="contact-form__title">
-                <h5>Contact Us</h5>
-                <h2>Make an Appointment</h2>
+          <div class="contact-form__title">
+            <h5>Contact Us</h5>
+            <h2>Make an Appointment</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <form class="row">
+                <div class="mb-3 col-12 col-md-6">
+                  <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                </div>
+                <div class="mb-3 col-12 col-md-6">
+                  <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                </div>
+                <div class="mb-3 col-12 col-md-6">
+                  <select id="disabledSelect" class="form-select">
+                    <option>Disabled select</option>
+                  </select>
+                </div>
+                <div class="mb-3 col-12 col-md-6">
+                  <select id="disabledSelect" class="form-select">
+                    <option>Disabled select</option>
+                  </select>
+                </div>
+                <div class="col-12 mb-3">
+                  <textarea class="w-100" name="" id="" cols="5" rows="5"></textarea>
+                </div>
+                <div class="co-12">
+                  <button type="submit" class="btn btn-primary ">Book Appointment</button>
+                </div>
+              </form>
             </div>
-            <form class="row"  action="">
-               <div class="row col-md-6 col-12">
-                <input class="col-12 col-md-6"  type="text" placeholder="Full Name *">
-                <input class="col-12 col-md-6"  type="text" placeholder="Full Name *">
-                <select class="col-12 col-md-6">
-                    <option>Please Select</option>
-                </select>
-                <select class="col-12 col-md-6">
-                    <option>Please Select</option>
-                </select>
-                <textarea class="col-12" placeholder="Message"></textarea>
-               </div>
-            </form>
-            <button type="button" class="btn btn-primary">Book Appointment</button>
+          </div>
         </div>
     </section>
     <section class="container">
